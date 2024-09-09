@@ -7,3 +7,5 @@ POSTGRES_PASSWORD=""     # PostgreSQL password
 SQL_FILE_PATH = ".\schema.sql"
 WEEK_INTERVAL = 2
 JSON_PROPERTIES_FILE_PATH = ".\properties.json"
+API_RETRY_COUNT = 3
+REPORTING_GROUPS=["Electricity","Heat","Water","DistrictCooling"]

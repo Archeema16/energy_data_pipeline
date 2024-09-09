@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 from utils import create_table_if_not_exist, load_properties_json_in_db
 from config import WEEK_INTERVAL, JSON_PROPERTIES_FILE_PATH
-
+from energy_request_persist import get_property_daily_energy_data
 #ETL end date is 2 days ealrier as data in Open API is lagging 2 days behind. 
 end_date = datetime.date(datetime.now()) - timedelta(days=2)
 start_date = end_date -timedelta(weeks=WEEK_INTERVAL)
@@ -15,6 +15,11 @@ if tables_created:
     #run script to read properties json file and load data into table
     data_loaded = load_properties_json_in_db(JSON_PROPERTIES_FILE_PATH)
     print(f"{datetime.now()} , Properties data loaded to table:- {data_loaded}")
+    if data_loaded:
+        for property in properties_list:
+            get_property_daily_energy_data(property, start_date, end_date)
+    else:
+        print(f"{datetime.now()} , Pipeline Shutting down as unable to persist Properties Data")
 
 else:
     print(f"{datetime.now()} , Pipeline Shutting down as unable to to create/access tables")

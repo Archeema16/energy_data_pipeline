@@ -17,5 +17,11 @@ This repository contains code to connect to a local PostgreSQL database and proc
     version_id: This field keeps track of which version of the API was used to receive the data. It is essential for ensuring data consistency and accommodating future updates. <br>
     response_error: This field stores any errors encountered during API calls in JSON format. This allows for easier investigation in the future and enables the creation of ETL workflows to address failed retrievals. <br>
     Indexes have been created to improve query performance, as the table is expected to grow significantly in size over time. <br>
+- Due to limited api documentation and a failed proof of concept, only one reporting group is processed per API call. <br>
+- A single API call retrieves data for the entire date range for one reporting group and property at a time. <br>
+- All 4 reporting groups are configured in config.py. The code is designed to accommodate future changes in the reporting groups, allowing for additions or removals by simply updating the configuration file. <br>
+- The API retry mechanism is also configurable via the config.py file and can be adjusted as needed. <br>
+- The retry logic has been implemented for both 5xx errors and specific 4xx errors (GeneralException, TimeOutException), based on the API documentation.<br>
+- Git commands used in this branch are similar to Setup branch <br>
 - 
 
