@@ -72,4 +72,13 @@ StartDate:- 2024-08-25 , EndDate:- 2024-09-08 , Tables Created If not existed:- 
 ('1507 Suutarilan monitoimitalo/ala-aste ja Lpk Seulanen', 'Electricity', 28397.710000000003, 'kWh', 15)<br>
 ('1507 Suutarilan monitoimitalo/ala-aste ja Lpk Seulanen', 'Heat', 4809.0, 'kWh', 14)<br>
 
-**Disclaimer** :- The Properties Energy Stats will change according to the time ETL ran.
+**Disclaimer** :- The Properties Energy Stats will change according to the time ETL ran. <br>
+
+**Future Potential Work** :- <br>
+- Enhanced Data Architecture: Currently using a One Big Table approach, we can plan to transition to a Medallion or Star Schema for improved performance and scalability. <br>
+- ETL Checkpointing: We can implement checkpointing in the ETL process to ensure failure safety and allow for resuming from the last successful point. <br>
+- Incremental ETL Runs: For daily ETL workflow, we can add a mechanism to track the last processed date, enabling the ETL to start from where it left off. <br>
+- Asynchronous API Calls: To handle large properties datasets efficiently and adhere to rate limits, we can introduce aiohttp and aiolimiter for asynchronous API calls.<br>
+- Parallel Processing: To speed up workflow processing, we can explore the use of PySpark for parallel data processing. <br>
+- Enhanced Analytics: We can use the Property Endpoint to access detailed property information and and also provide hourly data for more comprehensive and granular analysis of energy usage. <br>
+
