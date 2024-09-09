@@ -35,41 +35,41 @@ This repository contains code to connect to a local PostgreSQL database and proc
 - Git commands used in this branch git fetch origin, git checkout, git switch, and other similar to Setup branch <br><br>
 
 **Sample Output**:- <br>
-2024-09-10 00:13:16.017841 : Tables Schema created successfully!
-StartDate:- 2024-08-25 , EndDate:- 2024-09-08 , Tables Created If not existed:- True
-2024-09-10 00:13:16.555517 : Data inserted successfully!
-2024-09-10 00:13:16.556054 , Properties data loaded to table:- True
-2024-09-10 00:13:17.268566 : Data inserted successfully for 1000 Hakaniemen kauppahalli , Electricity
-2024-09-10 00:13:17.973388 : Data inserted successfully for 1000 Hakaniemen kauppahalli , Heat
-2024-09-10 00:13:18.684646 : Error Data inserted for 1000 Hakaniemen kauppahalli , Water
-2024-09-10 00:13:19.335392 : Error Data inserted for 1000 Hakaniemen kauppahalli , DistrictCooling
-2024-09-10 00:13:20.142624 : Data inserted successfully for 1001 Hietalahden kauppahalli , Electricity
-2024-09-10 00:13:20.771434 : Data inserted successfully for 1001 Hietalahden kauppahalli , Heat
-2024-09-10 00:13:21.442659 : Error Data inserted for 1001 Hietalahden kauppahalli , Water
-2024-09-10 00:13:22.118862 : Error Data inserted for 1001 Hietalahden kauppahalli , DistrictCooling
-2024-09-10 00:13:22.791449 : Data inserted successfully for 1002 Vanha kauppahalli , Electricity
-2024-09-10 00:13:23.450660 : Data inserted successfully for 1002 Vanha kauppahalli , Heat
-2024-09-10 00:13:24.087885 : Error Data inserted for 1002 Vanha kauppahalli , Water
-2024-09-10 00:13:24.691321 : Error Data inserted for 1002 Vanha kauppahalli , DistrictCooling
-2024-09-10 00:13:25.351757 : Data inserted successfully for 1037 Vuotalo , Electricity
-2024-09-10 00:13:25.980865 : Data inserted successfully for 1037 Vuotalo , Heat
-2024-09-10 00:13:26.603135 : Data inserted successfully for 1037 Vuotalo , Water
-2024-09-10 00:13:27.221306 : Error Data inserted for 1037 Vuotalo , DistrictCooling
-2024-09-10 00:13:27.859908 : Data inserted successfully for 1507 Suutarilan monitoimitalo/ala-aste ja Lpk Seulanen , Electricity
-2024-09-10 00:13:28.558374 : Data inserted successfully for 1507 Suutarilan monitoimitalo/ala-aste ja Lpk Seulanen , Heat
-2024-09-10 00:13:29.163743 : Error Data inserted for 1507 Suutarilan monitoimitalo/ala-aste ja Lpk Seulanen , Water
-2024-09-10 00:13:29.875656 : Error Data inserted for 1507 Suutarilan monitoimitalo/ala-aste ja Lpk Seulanen , DistrictCooling
-2024-09-10 00:13:29.897797 : Properties Energy Stats as follows:-
-('1000 Hakaniemen kauppahalli', 'Electricity', 454.44, 'kWh', 14)
-('1000 Hakaniemen kauppahalli', 'Heat', 8306.0, 'kWh', 14)
-('1001 Hietalahden kauppahalli', 'Electricity', 15129.066999999997, 'kWh', 15)
-('1001 Hietalahden kauppahalli', 'Heat', 4976.0, 'kWh', 14)
-('1002 Vanha kauppahalli', 'Electricity', 4638.759999999999, 'kWh', 14)
-('1002 Vanha kauppahalli', 'Heat', 8991.0, 'kWh', 14)
-('1037 Vuotalo', 'Electricity', 31007.26, 'kWh', 15)
-('1037 Vuotalo', 'Heat', 3912.0, 'kWh', 15)
-('1037 Vuotalo', 'Water', 1644.0, 'M3', 15)
-('1507 Suutarilan monitoimitalo/ala-aste ja Lpk Seulanen', 'Electricity', 28397.710000000003, 'kWh', 15)
-('1507 Suutarilan monitoimitalo/ala-aste ja Lpk Seulanen', 'Heat', 4809.0, 'kWh', 14)
+2024-09-10 00:13:16.017841 : Tables Schema created successfully!<br>
+StartDate:- 2024-08-25 , EndDate:- 2024-09-08 , Tables Created If not existed:- True<br>
+2024-09-10 00:13:16.555517 : Data inserted successfully!<br>
+2024-09-10 00:13:16.556054 , Properties data loaded to table:- True<br>
+2024-09-10 00:13:17.268566 : Data inserted successfully for 1000 Hakaniemen kauppahalli , Electricity<br>
+2024-09-10 00:13:17.973388 : Data inserted successfully for 1000 Hakaniemen kauppahalli , Heat<br>
+2024-09-10 00:13:18.684646 : Error Data inserted for 1000 Hakaniemen kauppahalli , Water<br>
+2024-09-10 00:13:19.335392 : Error Data inserted for 1000 Hakaniemen kauppahalli , DistrictCooling<br>
+2024-09-10 00:13:20.142624 : Data inserted successfully for 1001 Hietalahden kauppahalli , Electricity<br>
+2024-09-10 00:13:20.771434 : Data inserted successfully for 1001 Hietalahden kauppahalli , Heat<br>
+2024-09-10 00:13:21.442659 : Error Data inserted for 1001 Hietalahden kauppahalli , Water<br>
+2024-09-10 00:13:22.118862 : Error Data inserted for 1001 Hietalahden kauppahalli , DistrictCooling<br>
+2024-09-10 00:13:22.791449 : Data inserted successfully for 1002 Vanha kauppahalli , Electricity<br>
+2024-09-10 00:13:23.450660 : Data inserted successfully for 1002 Vanha kauppahalli , Heat<br>
+2024-09-10 00:13:24.087885 : Error Data inserted for 1002 Vanha kauppahalli , Water<br>
+2024-09-10 00:13:24.691321 : Error Data inserted for 1002 Vanha kauppahalli , DistrictCooling<br>
+2024-09-10 00:13:25.351757 : Data inserted successfully for 1037 Vuotalo , Electricity<br>
+2024-09-10 00:13:25.980865 : Data inserted successfully for 1037 Vuotalo , Heat<br>
+2024-09-10 00:13:26.603135 : Data inserted successfully for 1037 Vuotalo , Water<br>
+2024-09-10 00:13:27.221306 : Error Data inserted for 1037 Vuotalo , DistrictCooling<br>
+2024-09-10 00:13:27.859908 : Data inserted successfully for 1507 Suutarilan monitoimitalo/ala-aste ja Lpk Seulanen , Electricity<br>
+2024-09-10 00:13:28.558374 : Data inserted successfully for 1507 Suutarilan monitoimitalo/ala-aste ja Lpk Seulanen , Heat<br>
+2024-09-10 00:13:29.163743 : Error Data inserted for 1507 Suutarilan monitoimitalo/ala-aste ja Lpk Seulanen , Water<br>
+2024-09-10 00:13:29.875656 : Error Data inserted for 1507 Suutarilan monitoimitalo/ala-aste ja Lpk Seulanen , DistrictCooling<br>
+2024-09-10 00:13:29.897797 : Properties Energy Stats as follows:-<br>
+('1000 Hakaniemen kauppahalli', 'Electricity', 454.44, 'kWh', 14)<br>
+('1000 Hakaniemen kauppahalli', 'Heat', 8306.0, 'kWh', 14)<br>
+('1001 Hietalahden kauppahalli', 'Electricity', 15129.066999999997, 'kWh', 15)<br>
+('1001 Hietalahden kauppahalli', 'Heat', 4976.0, 'kWh', 14)<br>
+('1002 Vanha kauppahalli', 'Electricity', 4638.759999999999, 'kWh', 14)<br>
+('1002 Vanha kauppahalli', 'Heat', 8991.0, 'kWh', 14)<br>
+('1037 Vuotalo', 'Electricity', 31007.26, 'kWh', 15)<br>
+('1037 Vuotalo', 'Heat', 3912.0, 'kWh', 15)<br>
+('1037 Vuotalo', 'Water', 1644.0, 'M3', 15)<br>
+('1507 Suutarilan monitoimitalo/ala-aste ja Lpk Seulanen', 'Electricity', 28397.710000000003, 'kWh', 15)<br>
+('1507 Suutarilan monitoimitalo/ala-aste ja Lpk Seulanen', 'Heat', 4809.0, 'kWh', 14)<br>
 
 **Disclaimer** :- The Properties Energy Stats will change according to the time ETL ran.
