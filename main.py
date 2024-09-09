@@ -17,4 +17,4 @@ if tables_created:
     print(f"{datetime.now()} , Properties data loaded to table:- {data_loaded}")
 
 else:
-     print(f"{datetime.now()} , Pipeline Shutting down as unable to to create/access tables")
+    print(f"{datetime.now()} , Pipeline Shutting down as unable to to create/access tables")

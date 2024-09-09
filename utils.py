@@ -51,11 +51,11 @@ def create_table_if_not_exist():
             sql_file = file.read()
         cursor.execute(sql_file)
         conn.commit()
-        print(f"{datetime.now()} : Table Schema created successfully!")
+        print(f"{datetime.now()} : Tables Schema created successfully!")
         close_db_access(conn,cursor)
         return True
     except Exception as e:
-        print(f"{datetime.now()} : Error while creating table:", e)
+        print(f"{datetime.now()} : Error while creating tables:", e)
         close_db_access(conn,cursor)
         return False
 
